@@ -44,7 +44,7 @@ def results():
 
 @app.route('/save', methods=["POST"])
 def save():
-    return request.form['name']
+    return str(request.form)
 
 if __name__ == '__main__':
     app.run(debug=True)
